@@ -1,24 +1,31 @@
-import logo from './logo.svg';
+import { useState } from 'react';
+import { ThemeProvider } from 'styled-components';
+import LandingPage from './components/LandingPage/LandingPage.js';
 import './App.css';
 
+const LightTheme = {
+  pageBackground: "white",
+  titleColor: "#dc658b",
+}
+
+const DarkTheme = {
+  pageBackground: "#282c36",
+  titleColor: "lightpink",
+};
+
+const themes = {
+  light: LightTheme,
+  dark: DarkTheme,
+}
+
+
 function App() {
+const [theme, setTheme] = useState("light")
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <ThemeProvider theme={themes[theme]}>
+         <LandingPage theme={theme} setTheme={setTheme}/>
+      </ThemeProvider>
   );
 }
 
