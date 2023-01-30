@@ -8,7 +8,7 @@ const LightTheme = {
   titleColor: "#dc658b",
 }
 
-
+// somwthing
 const DarkTheme = {
   pageBackground: "#282c36",
   titleColor: "lightpink",
