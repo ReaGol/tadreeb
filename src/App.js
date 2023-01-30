@@ -3,6 +3,7 @@ import { ThemeProvider } from 'styled-components';
 import LandingPage from './components/LandingPage/LandingPage.js';
 import './App.css';
 // conflict 
+// something else
 const LightTheme = {
   pageBackground: "white",
   titleColor: "#dc658b",
