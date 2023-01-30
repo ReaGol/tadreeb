@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { ThemeProvider } from 'styled-components';
 import LandingPage from './components/LandingPage/LandingPage.js';
 import './App.css';
-
+// conflict 
 const LightTheme = {
   pageBackground: "white",
   titleColor: "#dc658b",
