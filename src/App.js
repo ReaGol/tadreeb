@@ -8,6 +8,7 @@ const LightTheme = {
   titleColor: "#dc658b",
 }
 
+
 const DarkTheme = {
   pageBackground: "#282c36",
   titleColor: "lightpink",
